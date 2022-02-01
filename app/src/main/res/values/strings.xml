@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Robot Control</string>
+    <string name="app_Name">Robot Control</string>
+    <string name="select_type">Please select the connection type:</string>
+    <string name="but_BT">bluetooth control</string>
+    <string name="but_internet">internet  control</string>
+    <string name="robot_icon">robot icon</string>
+
+    <string name="forward_but">forward</string>
+    <string name="back_but">back</string>
+    <string name="left_but">left</string>
+    <string name="right_but">right</string>
+
+</resources>

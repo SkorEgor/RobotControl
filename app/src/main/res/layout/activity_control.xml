@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ControlActivity">
+
+    <Button
+        android:id="@+id/forwardBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:contentDescription="@string/forward_but"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_baseline_keyboard_arrow_up_24"
+        app:iconGravity="textTop"
+        app:iconSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/back_but"
+        android:backgroundTint="@color/teal_700"
+        android:rotation="180"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_baseline_keyboard_arrow_up_24"
+        app:iconGravity="textTop"
+        app:iconSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightBut"
+        app:layout_constraintStart_toEndOf="@+id/leftBut"
+        app:layout_constraintTop_toBottomOf="@+id/rightBut"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/rightBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/right_but"
+        android:backgroundTint="@color/teal_700"
+        android:rotation="90"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_baseline_keyboard_arrow_up_24"
+        app:iconGravity="textTop"
+        app:iconSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/forwardBut"
+        app:layout_constraintTop_toBottomOf="@+id/forwardBut" />
+
+    <Button
+        android:id="@+id/leftBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/left_but"
+        android:backgroundTint="@color/teal_700"
+        android:rotation="-90"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_baseline_keyboard_arrow_up_24"
+        app:iconGravity="textTop"
+        app:iconSize="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/forwardBut"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forwardBut" />
+</androidx.constraintlayout.widget.ConstraintLayout>
